@@ -2,7 +2,7 @@ name: Open Y
 type: profile
 description: 'Open Y Drupal distribution.'
 core_version_requirement: ^8 || ^9
-version: '8.x-2.6.2'
+version: '9.x-2.10.0'
 distribution:
   name: Open Y
   install:
@@ -22,7 +22,7 @@ dependencies:
   - drupal:datetime
   - drupal:datetime_range
   - drupal:editor
-  - drupal:entity_reference
+  # - drupal:entity_reference
   - drupal:file
   - drupal:help
   - drupal:history
@@ -46,16 +46,20 @@ dependencies:
   - drupal:toolbar
   - drupal:views
   - drupal:tour
+  # Compatibility
+  - jquery_ui_tooltip:jquery_ui_tooltip
+  - jquery_ui_tabs:jquery_ui_tabs
+  
   # Contrib modules.
   - admin_toolbar:admin_toolbar
   - captcha:captcha
   - ckeditor_bootstrap_buttons:ckeditor_bootstrap_buttons
-  - config_import:config_import
+  # - config_import:config_import
   - editor_advanced_link:editor_advanced_link
   - features:features
-  - fontyourface:fontyourface
+  # - fontyourface:fontyourface
   - image_captcha:image_captcha
-  - local_fonts:local_fonts
+  # - local_fonts:local_fonts
   - link_attributes:link_attributes
   - metatag:metatag
   - metatag_open_graph:metatag_open_graph
@@ -65,7 +69,6 @@ dependencies:
   - twig_tweak:twig_tweak
   # Open Y
   - advanced_help_block:advanced_help_block
-  - openy_autocomplete_path:openy_autocomplete_path
   - openy_block_custom_simple:openy_block_custom_simple
   - openy_datalayer:openy_datalayer
   - openy_editor:openy_editor
@@ -80,9 +83,12 @@ dependencies:
   - openy_redirect:openy_redirect
   - openy_system:openy_system
   - openy_taxonomy:openy_taxonomy
+  - openy_txnm_color:openy_txnm_color
   - openy_tour:openy_tour
   - openy_update:openy_update
+  - openy_content_core:openy_content_core
 themes:
-  - bartik
   - openy_admin
   - seven
+  - claro
+  - bartik
